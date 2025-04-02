@@ -95,7 +95,7 @@ export default function WebcamCanvas({
 				} else if(modelRef.current) {
 					const segmentation = await modelRef.current.segmentPerson(video, {
 						internalResolution: "medium",
-						segmentationThreshold: 0.3,
+						segmentationThreshold: 0.6,
 					});
 
 					offscreenCtx.drawImage(video, 0, 0, canvas.width, canvas.height);
